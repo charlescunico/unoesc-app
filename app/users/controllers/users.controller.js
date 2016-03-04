@@ -36,8 +36,8 @@ exports.create = function(req, res) {
 };
 exports.update = function(req, res) {
     var user = req.user;
-    user.email = req.body.email;
     user.name = req.body.name;
+    user.email = req.body.email;
     user.roles = req.body.roles;
     if (req.body.password) {
         user.password = req.body.password;
